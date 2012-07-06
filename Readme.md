@@ -2,12 +2,18 @@
 
 Template for Rails
 
+## Installation
+
+```sh
+git clone git://github.com/JustinCampbell/caboose.git
+```
+
 ## Usage
 
 ```sh
 rvm 1.9.3
 gem install rails
-rails new MyApp -m https://raw.github.com/JustinCampbell/caboose/master/caboose.rb
+rails new MyApp -m caboose/caboose.rb
 ```
 
 ## Why?
