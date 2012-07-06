@@ -56,7 +56,7 @@ end
 section "SASS, Bourbon, and normalize.css" do
   remove_file "app/assets/stylesheets/application.css"
   template "app/assets/stylesheets/application.css.sass"
-  template "app/assets/stylesheets/normalize.css"
+  template "app/assets/stylesheets/normalize.css.sass"
 end
 
 section "Slim, page_title helper, Google Analytics partial" do
