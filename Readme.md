@@ -1,6 +1,6 @@
 # Caboose
 
-Template for Rails. See a sample repo at [caboose-sample](http://github.com/JustinCampbell/caboose-sample).
+Template for Rails. See a sample repo at [caboose-sample](http://github.com/JustinCampbell/caboose-sample), and the same app on Heroku at [caboose-sample.herokuapp.com](http://caboose-sample.herokuapp.com/).
 
 ## Installation
 
