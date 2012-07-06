@@ -40,7 +40,7 @@ minutes.
 ### Style
 
 * SASS base style
-* Eric Meyer's reset
+* Normalize.css
 * Bourbon
 
 ### Testing

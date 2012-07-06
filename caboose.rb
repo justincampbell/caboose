@@ -53,12 +53,10 @@ section "Setup Gemfile, initial bundle install" do
   run "bundle install --binstubs --without production"
 end
 
-section "SASS, Bourbon, and Eric Meyer's Reset" do
+section "SASS, Bourbon, and normalize.css" do
   remove_file "app/assets/stylesheets/application.css"
-
-  %w[application reset].each do |stylesheet|
-    template "app/assets/stylesheets/#{stylesheet}.css.sass"
-  end
+  template "app/assets/stylesheets/application.css.sass"
+  template "app/assets/stylesheets/normalize.css"
 end
 
 section "Slim, page_title helper, Google Analytics partial" do
