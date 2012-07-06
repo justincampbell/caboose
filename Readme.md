@@ -1,4 +1,4 @@
-# Caboose
+# Caboose [![Build Status](https://secure.travis-ci.org/JustinCampbell/caboose.png)](https://secure.travis-ci.org/JustinCampbell/caboose)
 
 Template for Rails. See a sample repo at [caboose-sample](http://github.com/JustinCampbell/caboose-sample), and the same app on Heroku at [caboose-sample.herokuapp.com](http://caboose-sample.herokuapp.com/).
 
