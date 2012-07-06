@@ -1,6 +1,7 @@
 rvm:
   - 1.9.3
   - ruby-head
+before_script: unset BUNDLE_GEMFILE
 matrix:
   allow_failures:
     - rvm: ruby-head
