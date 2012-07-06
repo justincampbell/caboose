@@ -40,7 +40,7 @@ group :test do
   gem 'cucumber-rails'
   gem 'database_cleaner'
   #gem 'fabricator'
-  #gem 'simplecov'
+  gem 'simplecov'
   #gem 'timecop'
   #gem 'vcr'
 end

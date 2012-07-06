@@ -1,5 +1,7 @@
-# Only run simplecov with Rake
-require 'simplecov' unless ENV['GUARD_NOTIFY']
+unless ENV['GUARD_NOTIFY'] # Only run simplecov with Rake
+  require 'simplecov'
+  SimpleCov.start :rails
+end
 
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)

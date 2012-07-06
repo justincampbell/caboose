@@ -110,3 +110,7 @@ section "Generate PagesController with index view and root route" do
 
   route "root to: 'pages#index'"
 end
+
+section "Create database" do
+  run "rake db:migrate"
+end
