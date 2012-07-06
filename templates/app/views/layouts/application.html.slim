@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title = page_title
+    = stylesheet_link_tag :application, media: :all
+    = tag :meta, name: :viewport, content: 'width=device-width'
+    = csrf_meta_tags
+  body
+    = yield
+    = javascript_include_tag :application
+    = render 'shared/ga'
+
