@@ -38,11 +38,11 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   #gem 'fabricator'
   gem 'simplecov'
   #gem 'timecop'
+  gem 'turnip'
   #gem 'vcr'
 end
 

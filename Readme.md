@@ -46,7 +46,7 @@ minutes.
 ### Testing
 
 * RSpec
-* Cucumber
+* Turnip
 * Guard w/ Growl notifications
 * Travis CI
 
@@ -62,7 +62,6 @@ minutes.
 
 * Fabricator, or another factory
 * Timecop
-* Turnip instead of Cucumber
 * Unicorn configured for Heroku
 * VCR
 

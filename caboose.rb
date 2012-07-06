@@ -75,9 +75,23 @@ section "Setup RSpec" do
   run "guard init rspec"
 end
 
-section "Setup Cucumber" do
-  generate "cucumber:install"
-  run "guard init cucumber"
+section "Setup Turnip" do
+  inject_into_file ".rspec", after: "--colour" do
+    " -r turnip/rspec"
+  end
+
+  inject_into_file "Guardfile", after: ":version => 2" do
+    ", :turnip => true"
+  end
+
+  template "lib/tasks/rspec.rake"
+
+  template "spec/acceptance/user.feature"
+  gsub_file "spec/acceptance/user.feature",
+    "application_name",
+    app_name
+
+  template "spec/support/steps/web_steps.rb"
 end
 
 section "Prevent Rails generator from creating unneccesary files" do
