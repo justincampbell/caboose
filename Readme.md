@@ -47,6 +47,7 @@ minutes.
 
 * RSpec
 * Turnip
+* Fivemat
 * Guard w/ Growl notifications
 * Travis CI
 

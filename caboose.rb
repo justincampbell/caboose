@@ -75,6 +75,16 @@ section "Setup RSpec" do
   run "guard init rspec"
 end
 
+section "Setup Fivemat RSpec formatter" do
+  inject_into_file ".rspec", after: "--colour" do
+    " --format Fivemat"
+  end
+
+  inject_into_file "Guardfile", after: ":version => 2" do
+    ", :cli => \"--format Fivemat\""
+  end
+end
+
 section "Setup Turnip" do
   inject_into_file ".rspec", after: "--colour" do
     " -r turnip/rspec"
