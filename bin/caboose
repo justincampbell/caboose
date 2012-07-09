@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+if RUBY_VERSION < "1.9.2"
+  puts "Caboose requires Ruby 1.9.2 or above"
+  exit 1
+end
+
+system "rails new #{ARGV[0]} -m caboose.rb"
