@@ -1,6 +1,6 @@
 def git_commit(text)
   text.gsub! /'/, "’"
-  text << "\n\n[caboose](https://github.com/JustinCampbell/caboose)"
+  text << "\n\n[caboose](https://github.com/justincampbell/caboose)"
 
   git add: "-A ."
   git commit: "-m '#{text}'"
